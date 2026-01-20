@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">SYM</div>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- SIDE MENU -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+    <!-- LOADER -->
+    <div class="overlay loader">
+        <span>Loading experience…</span>
+    </div>
+
+    <!-- NAME SCREEN -->
+    <div class="overlay name-screen hidden">
+        <div class="card">
+            <h2>Before we start</h2>
+            <p>What should we call you?</p>
+            <input type="text" id="username" placeholder="Your name (optional)" />
+            <div class="actions">
+                <button id="continueBtn">Continue</button>
+                <button id="skipBtn" class="ghost">Skip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WELCOME SCREEN -->
+    <div class="overlay welcome-screen hidden">
+        <h2 id="welcomeText"></h2>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Small Team · Big Focus</span>
+
+            <h1 class="hero-title">
+                We Design & Build <br />
+                Thoughtful Web Experiences
+            </h1>
+
+            <p class="hero-subtitle">
+                A small development team working across frontend, backend, UI/UX,
+                and React-based web apps — focused on clarity, performance, and real use.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Start a Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services-header">
+            <h2>What We Can Help You Build</h2>
+            <p>
+                We focus on building solid foundations for early ideas — clean code,
+                clear UI, and scalable structure.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Frontend Development</h3>
+                <p>
+                    Responsive interfaces using HTML, CSS, JavaScript, and React —
+                    focused on performance and clarity.
+                </p>
+            </div>
+
+            <!-- SERVICES SECTION -->
+            <div class="service-card">
+                <h3>Backend Development</h3>
+                <p>
+                    REST APIs, authentication, and clean server-side logic designed
+                    to scale as your product grows.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Database & Integration</h3>
+                <p>
+                    Thoughtful database design, API integration, and optimized data
+                    flow between systems.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>UI / UX Design</h3>
+                <p>
+                    Clean wireframes and user-focused designs that balance usability
+                    with a modern visual style.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+  <div class="projects-header">
+    <h2>Selected Team & Academic Projects</h2>
+    <p>
+      Built during college and independent learning — showcasing our approach
+      to structure, functionality, and real-world use cases.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Weather Application</h3>
+      <p>
+        A frontend-focused project that fetches and displays real-time weather
+        data using public APIs with a clean, responsive interface.
+      </p>
+      <span class="tech">HTML · CSS · JavaScript · API</span>
+      <a href="https://github.com/yatamilan/weather-app" target="_blank">
+        View on GitHub →
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>URL Shortener</h3>
+      <p>
+        A backend-oriented system that generates short links, handles redirects,
+        and manages URL storage with a simple and scalable structure.
+      </p>
+      <span class="tech">Backend · APIs · Database</span>
+      <a href="https://github.com/yatamilan/url-shortener" target="_blank">
+        View on GitHub →
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>Local Media Server</h3>
+      <p>
+        A self-hosted media server designed to stream and manage local media files,
+        demonstrating backend logic and system-level thinking.
+      </p>
+      <span class="tech">Backend · Networking · File Handling</span>
+      <a href="https://github.com/yatamilan/Yukesh-s-Local-Media-Server" target="_blank">
+        View on GitHub →
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>QR Attendance System</h3>
+      <p>
+        An end-to-end attendance workflow using QR codes, focusing on usability,
+        data handling, and practical application scenarios.
+      </p>
+      <span class="tech">Full Stack · QR · Workflow</span>
+      <a href="https://github.com/yatamilan/QR-Attendance-System" target="_blank">
+        View on GitHub →
+      </a>
+    </div>
+  </div>
+
+  <div class="projects-extra">
+    <h4>Additional Academic Work</h4>
+    <p>
+      <strong>Simple ATM Interface (Java)</strong> — A console-based Java application
+      implementing core banking logic such as authentication, balance handling,
+      and transaction workflows.
+    </p>
+    <a
+      href="https://github.com/yatamilan/Simple-ATM-Interface-in-Java"
+      target="_blank"
+    >
+      View on GitHub →
+    </a>
+  </div>
+</section>
+
+<!-- PROCESS SECTION -->
+ <section class="process" id="process">
+  <div class="process-header">
+    <h2>How We Work</h2>
+    <p>
+      A simple, transparent process focused on clarity, feedback,
+      and building things the right way.
+    </p>
+  </div>
+
+  <div class="process-steps">
+    <div class="process-step">
+      <span class="step-number">01</span>
+      <h3>Understand the Idea</h3>
+      <p>
+        We start by understanding your goal, requirements, and constraints
+        to ensure we’re solving the right problem.
+      </p>
+    </div>
+
+    <div class="process-step">
+      <span class="step-number">02</span>
+      <h3>Plan the Structure</h3>
+      <p>
+        We define the structure, tech stack, and basic flow before writing
+        any code to avoid unnecessary rework.
+      </p>
+    </div>
+
+    <div class="process-step">
+      <span class="step-number">03</span>
+      <h3>Build & Iterate</h3>
+      <p>
+        Development happens in small, testable steps with regular updates
+        and room for feedback.
+      </p>
+    </div>
+
+    <div class="process-step">
+      <span class="step-number">04</span>
+      <h3>Review & Improve</h3>
+      <p>
+        We review the result, fix issues, improve usability, and ensure
+        everything works as expected.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="team" id="team">
+  <div class="team-header">
+    <h2>Our Team</h2>
+    <p>
+      A small group of developers working together with clear roles,
+      shared responsibility, and a focus on building things right.
+    </p>
+  </div>
+
+  <div class="team-grid">
+    
+
+    <div class="team-card">
+      <div class="avatar">A</div>
+      <h3>Sarvothyan</h3>
+      <span class="role">Backend/ Frontend Developer</span>
+      <p>
+  Works across both frontend and backend development, building
+  efficient, scalable web applications and ensuring seamless
+  integration between design and functionality.
+</p>
+
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">B</div>
+      <h3>Mageshwari</h3>
+      <span class="role">UI / UX & Frontend</span>
+      <p>
+  Manages client communication and feedback, while also contributing
+  to frontend development and UI/UX design, ensuring client needs
+  are translated into a smooth user experience.
+</p>
+
+    </div>
+    <div class="team-card">
+      <div class="avatar">C</div>
+      <h3>Yukeshwaran</h3>
+      <span class="role">Frontend/ Database Developer</span>
+      <p>
+  Focuses on frontend development and database management, ensuring
+  smooth data flow, efficient storage, and responsive interfaces
+  across all projects.
+</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+ <section class="contact" id="contact">
+  <div class="contact-header">
+    <h2>Get in Touch</h2>
+    <p>
+      Reach out for collaboration, questions, or project inquiries.
+      We respond via email or LinkedIn.
+    </p>
+  </div>
+
+  <div class="contact-methods">
+    <div class="contact-card">
+      <h3>Email</h3>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarvothyans@gmail.com&su=Project%20Inquiry&body=Hello%20Sarvothyan,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20collaboration%20with%20your%20team.%0D%0A%0D%0ABest%20regards," target="_blank">
+  Email Sarvothyan
+</a>
+    </div>
+
+    <div class="contact-card">
+       <h3>LinkedIn</h3>
+      <a href="https://www.linkedin.com/in/sarvothyan-s-a61786291/" target="_blank">
+        Sarvothyan LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+ <footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Sarvothyan. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sarvothyans@gmail.com&su=Project%20Inquiry&body=Hello%20Sarvothyan,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20collaboration%20with%20your%20team.%0D%0A%0D%0ABest%20regards," target="_blank">Email</a>
+      <a href="https://www.linkedin.com/in/sarvothyan-s-a61786291/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+
+</html>
